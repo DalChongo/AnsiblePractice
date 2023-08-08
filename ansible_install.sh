@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # To install Ansible use the following
 pipx install --include-deps ansible
 # to upgrade
