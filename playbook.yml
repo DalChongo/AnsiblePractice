@@ -1,7 +1,15 @@
-name: My first play
-hosts: hosts
-  name: Ping my hosts
-  ansible.builtin.ping:
-  name: Print message
-  ansible.builtin.debug:
-    msg: Hello World
+# name: My first play
+# hosts: hosts
+#   name: Ping my hosts
+#   ansible.builtin.ping:
+#   name: Print message
+#   ansible.builtin.debug:
+#     msg: Hello World
+- name: My first play
+  hosts: virtualmachines
+  tasks:
+   - name: Ping my hosts
+     ansible.builtin.ping:
+   - name: Print message
+     ansible.builtin.debug:
+       msg: Hello world
