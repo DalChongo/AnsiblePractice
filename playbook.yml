@@ -6,7 +6,7 @@
 #   ansible.builtin.debug:
 #     msg: Hello World
 - name: My first play
-  hosts: virtualmachines
+  hosts: hosts
   tasks:
    - name: Ping my hosts
      ansible.builtin.ping:
